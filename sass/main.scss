@@ -1,0 +1,218 @@
+@import './reset';
+@import './variables';
+// Next time try not to repeat styles too much
+body {
+  font-family: 'Press Start 2P', cursive;
+  background: #6441a5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2a0845,
+    #6441a5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2a0845,
+    #6441a5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.scoreboard {
+  background: var(--Dark-blue);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  width: 500px;
+  height: 250px;
+  margin: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-top: 300px;
+  border-radius: 30px;
+  transform: scale(1.7);
+  .home-team {
+    margin-inline: 60px;
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    h3 {
+      text-align: center;
+    }
+    .score-box {
+      background: var(--Black-one);
+      width: 120px;
+      height: 100px;
+      border-radius: 8px;
+      h4 {
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        font-size: 2.4rem;
+        font-family: 'Press Start 2P', cursive;
+        overflow: hidden;
+        color: var(--Coral-red);
+      }
+    }
+    .score-buttons {
+      display: flex;
+      font-size: 0.7rem;
+      margin-top: 10px;
+      font-family: 'Press Start 2P', cursive;
+      justify-content: center;
+      cursor: pointer;
+      .one {
+        width: 30px;
+        height: 30px;
+        color: var(--Baby-blue);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--Baby-blue);
+        border-radius: 5px;
+        letter-spacing: 1px;
+        margin-top: 10px;
+        margin-inline: 3px;
+      }
+      .two {
+        width: 30px;
+        height: 30px;
+        color: var(--Baby-blue);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--Baby-blue);
+        border-radius: 5px;
+        letter-spacing: 1px;
+        margin-top: 10px;
+        margin-inline: 3px;
+      }
+      .three {
+        width: 30px;
+        height: 30px;
+        color: var(--Baby-blue);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--Baby-blue);
+        border-radius: 5px;
+        letter-spacing: 1px;
+        margin-top: 10px;
+        margin-inline: 3px;
+      }
+    }
+  }
+  .guest-team {
+    margin-inline: 60px;
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    h3 {
+      text-align: center;
+    }
+    .score-box {
+      background: var(--Black-one);
+      width: 120px;
+      height: 100px;
+      border-radius: 8px;
+      h4 {
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        font-size: 2.4rem;
+        font-family: 'Press Start 2P', cursive;
+        overflow: hidden;
+        color: var(--Coral-red);
+      }
+    }
+    .score-buttons {
+      display: flex;
+      font-size: 0.7rem;
+      margin-top: 10px;
+      font-family: 'Press Start 2P', cursive;
+      justify-content: center;
+      cursor: pointer;
+      .one {
+        width: 30px;
+        height: 30px;
+        color: var(--Baby-blue);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--Baby-blue);
+        border-radius: 5px;
+        letter-spacing: 1px;
+        margin-top: 10px;
+        margin-inline: 3px;
+      }
+      .two {
+        width: 30px;
+        height: 30px;
+        color: var(--Baby-blue);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--Baby-blue);
+        border-radius: 5px;
+        letter-spacing: 1px;
+        margin-top: 10px;
+        margin-inline: 3px;
+      }
+      .three {
+        width: 30px;
+        height: 30px;
+        color: var(--Baby-blue);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--Baby-blue);
+        border-radius: 5px;
+        letter-spacing: 1px;
+        margin-top: 10px;
+        margin-inline: 3px;
+      }
+    }
+  }
+}
+// IPHONE SE
+@media (min-width: 300px) and (max-width: 400px) {
+  .scoreboard {
+    margin-top: 80px;
+    position: relative;
+    right: 90px;
+    transform: scale(0.6);
+  }
+}
+// IPHONE X
+@media (min-width: 375px) and (max-width: 480px) {
+  .scoreboard {
+    margin-top: 200px;
+    position: relative;
+    right: 60px;
+    transform: scale(0.7);
+  }
+}
+// TABLET
+@media (min-width: 480px) and (max-width: 900px) {
+  .scoreboard {
+    margin-top: 300px;
+    position: relative;
+    left: 4px;
+    transform: scale(1.5);
+  }
+}
+// WATCH
+@media (min-width: 100px) and (max-width: 200px) {
+  .scoreboard {
+    margin-top: 0px;
+    position: relative;
+    right: 170px;
+    transform: scale(0.3);
+  }
+}
