@@ -133,6 +133,7 @@ body {
   font-family: "Press Start 2P", cursive;
   overflow: hidden;
   color: var(--Coral-red);
+  cursor: pointer;
 }
 .scoreboard .home-team .score-buttons {
   display: flex;
@@ -208,6 +209,7 @@ body {
   font-family: "Press Start 2P", cursive;
   overflow: hidden;
   color: var(--Coral-red);
+  cursor: pointer;
 }
 .scoreboard .guest-team .score-buttons {
   display: flex;

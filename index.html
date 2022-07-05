@@ -20,27 +20,37 @@
       <div class="home-team">
         <h3>HOME</h3>
         <div class="score-box">
-          <h4 id="count-el">0</h4>
+          <h4 id="count-home-el">0</h4>
         </div>
         <div class="score-buttons">
           <!--Next time remember to use buttons
-            and not divs-->
-          <div id="one-el" class="one">+1</div>
-          <div id="two-el" class="two">+2</div>
-          <div id="three-el" class="three">+3</div>
+        and not divs-->
+          <!--There are two different ways you can do
+        this, one way is to do onclick functions in
+        javascript which is what you are doing.
+        The other way is to do onclick=''
+        which may have been easier and shorter with
+        code!-->
+          <div id="one-home-el" class="one">+1</div>
+          <div id="two-home-el" class="two">+2</div>
+          <div id="three-home-el" class="three">+3</div>
         </div>
       </div>
       <div class="guest-team">
         <h3>GUEST</h3>
         <div class="score-box">
-          <h4 id="count-el">0</h4>
+          <h4 onclick="decrementGuest()" id="count-guest-el">0</h4>
         </div>
         <div class="score-buttons">
-          <div id="one-el" class="one">+1</div>
-          <div id="two-el" class="two">+2</div>
-          <div id="three-el" class="three">+3</div>
+          <!--Here I decided to do onclick functions
+        instead of grabing them from the DOM and
+        doing .onclick functions-->
+          <div onclick="oneGuestEl()" class="one">+1</div>
+          <div onclick="twoGuestEl()" class="two">+2</div>
+          <div onclick="threeGuestEl()" class="three">+3</div>
         </div>
       </div>
     </div>
+    <script src="./javascript/script.js"></script>
   </body>
 </html>
